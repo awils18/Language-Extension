@@ -22,6 +22,7 @@ ITNode * newNode(Interval i)
     temp->i = new Interval(i);
     temp->max = i.high;
     temp->left = temp->right = NULL;
+    return temp;
 };
  
 // A utility function to insert a new Interval Search Tree Node
@@ -115,6 +116,6 @@ int main()
     if (res == NULL)
         cout << "\nNo Overlapping Interval";
     else
-        cout << "\nOverlaps with [" << res->low << ", " << res->high << "]";
+        cout << "\nOverlaps with [" << res->low << ", " << res->high << "]\n";
     return 0;
 }
