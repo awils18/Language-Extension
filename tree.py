@@ -1,8 +1,8 @@
 import sys
 import ctypes
-from ctypes import cdll
+from ctypes import *
 
-testlib = ctypes.CDLL('C:\Users\awils18\Documents\GitHub\Language-Extension\interval_tree.so')
+testlib = CDLL('interval_tree.dll')
 
 
 
